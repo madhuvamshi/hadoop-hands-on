@@ -18,6 +18,8 @@ hadoop fs -ls /user/cloudera
 
 hadoop fs -rmdir /user/cloudera/hdir
 
+![create remove_directories](https://github.com/user-attachments/assets/3665489f-c011-4cff-9fe1-95275d1723cd)
+
 
 ##  File Operations
 
@@ -50,6 +52,9 @@ hadoop fs -mv /user/cloudera/file11.txt /user/cloudera/archive/
 ```bash
 hadoop fs -rm /user/cloudera/file11_backup.txt
 ```
+![FileOperations1](https://github.com/user-attachments/assets/dc1ddb88-2a5e-4d66-945c-3fe8acc166e6)
+
+![FileOperations2](https://github.com/user-attachments/assets/e5256e4a-8765-4840-a731-7894a3907e71)
 
 ---
 
@@ -64,6 +69,7 @@ hadoop fs -mkdir -p /user/cloudera/project/input/data
 ```bash
 hadoop fs -rm -r /user/cloudera/project
 ```
+![DirectoryOperations](https://github.com/user-attachments/assets/ab309876-5f2c-417f-946c-2c6972c9dccc)
 
 ---
 
@@ -78,6 +84,7 @@ hadoop fs -cat /user/cloudera/archive/file11.txt
 ```bash
 hadoop fs -tail /user/cloudera/archive/file11.txt
 ```
+![FileViewing](https://github.com/user-attachments/assets/b07091fb-c700-4a13-8266-b42a7351687a)
 
 ---
 
@@ -112,10 +119,11 @@ hadoop fs -chown cloudera:cloudera /user/cloudera/archive/file11.txt
 ```bash
 hadoop fs -test -e /user/cloudera/archive/file11.txt && echo "Exists" || echo "Not Found"
 ```
+![permision2](https://github.com/user-attachments/assets/c0415db3-2109-4064-b424-4bc2d200d7bd)
 
 ---
 
-##️ ACL (Advanced)
+##ACL (Advanced)
 
 ### Set and Get ACLs
 ```bash
